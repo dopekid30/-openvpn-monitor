@@ -548,12 +548,11 @@ class OpenvpnHtmlPrinter(object):
         output('<!doctype html>')
         output('<html lang="en"><head>')
         output('<meta charset="utf-8">')
-        output('<meta http-equiv="X-UA-Compatible" content="IE=edge">')
-        output('<meta name="viewport" content="width=device-width, initial-scale=1">')
-        output('<title>{0!s} OpenVPN Status Monitor</title>'.format(self.site))
+        output('<title>{0!s} Status Monitor</title>'.format(self.site))
         output('<meta http-equiv="refresh" content="300" />')
 
         # css
+        output('<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/dopekid30/-generate-sa-idnumbers/master/dk.png">')         # noqa         # noqa
         output('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous" />')  # noqa
         output('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha512-iy8EXLW01a00b26BaqJWaCmk9fJ4PsMdgNRqV96KwMPSH+blO82OHzisF/zQbRIIi8m0PiO10dpS0QxrcXsisw==" crossorigin="anonymous" />')  # noqa
         output('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.bootstrap_3.min.css" integrity="sha512-1r2gsUynzocV5QbYgEwbcNGYQeQ4jgHUNZLl+PMr6o248376S3f9k8zmXvsKkU06wH0MrmQacKd0BjJ/kWeeng==" crossorigin="anonymous" />')  # noqa
@@ -603,7 +602,7 @@ class OpenvpnHtmlPrinter(object):
         output('</button>')
 
         output('<a class="navbar-brand" href="#">')
-        output('{0!s} OpenVPN Status Monitor</a>'.format(self.site))
+        output('{0!s} Status Monitor</a>'.format(self.site))
 
         output('</div><div class="collapse navbar-collapse" id="myNavbar">')
         output('<ul class="nav navbar-nav"><li class="dropdown">')
@@ -734,7 +733,7 @@ class OpenvpnHtmlPrinter(object):
 
         output('</div>')
         output('<div class="panel-footer panel-custom">')
-        output('{0!s}'.format(vpn['release']))
+        #output('{0!s}'.format(vpn['release']))
         output('</div>')
         output('</div>')
 

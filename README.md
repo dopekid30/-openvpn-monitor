@@ -21,7 +21,7 @@ server, however it does not necessarily need to.
 
 The current source code is available on github:
 
-https://github.com/furlongm/openvpn-monitor
+https://github.com/dopekid30/openvpn-monitor
 
 
 ## Install Options
@@ -89,7 +89,7 @@ systemctl restart httpd
 
 ```shell
 cd /var/www/html
-git clone https://github.com/furlongm/openvpn-monitor.git
+git clone https://github.com/dopekid30/openvpn-monitor.git
 ```
 
 See [configuration](#configuration) for details on configuring openvpn-monitor.
@@ -119,7 +119,7 @@ variables.
 
 ```shell
 cd /srv
-git clone https://github.com/furlongm/openvpn-monitor.git
+git clone https://github.com/dopekid30/openvpn-monitor.git
 cd openvpn-monitor
 virtualenv -p python3 .
 . bin/activate

@@ -634,7 +634,7 @@ class OpenvpnHtmlPrinter(object):
 
     @staticmethod
     def print_session_table_headers(vpn_mode, show_disconnect):
-        server_headers = ['Username / Hostname', 'VPN IP',
+        server_headers = ['Users', 'VPN IP',
                           'Remote IP', 'Location', 'Bytes In',
                           'Bytes Out', 'Connected Since', 'Last Ping', 'Time Online']
         if show_disconnect:

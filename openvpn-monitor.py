@@ -635,8 +635,8 @@ class OpenvpnHtmlPrinter(object):
     @staticmethod
     def print_session_table_headers(vpn_mode, show_disconnect):
         server_headers = ['Users', 'VPN IP',
-                          'Remote IP', 'Location', 'Bytes In',
-                          'Bytes Out', 'Connected Since', 'Last Ping', 'Time Online']
+                          'Remote IP', 'Location', 'Bytes Out',
+                          'Bytes In', 'Connected Since', 'Last Ping', 'Time Online']
         if show_disconnect:
             server_headers.append('Action')
 
@@ -709,7 +709,7 @@ class OpenvpnHtmlPrinter(object):
         output('<div class="table-responsive">')
         output('<table class="table table-condensed table-responsive">')
         output('<thead><tr><th>VPN Mode</th><th>Status</th><th>Pingable</th>')
-        output('<th>Clients</th><th>Total Bytes In</th><th>Total Bytes Out</th>')
+        output('<th>Clients</th><th>Total Bytes Out</th><th>Total Bytes In</th>')
         output('<th>Up Since</th><th>Local IP Address</th>')
         if vpn_mode == 'Client':
             output('<th>Remote IP Address</th>')
